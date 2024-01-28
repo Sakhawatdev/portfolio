@@ -1,0 +1,98 @@
+{% extends "common_code/base.html" %} {% block title %} Home {%endblock title%} {%block content%} {% load static%}
+
+<section class="text-gray-600 body-font bg-slate-100 h-screen bg-cover bg-no-repeat bg-center">
+  <div class="container mx-auto flex px-5 custom_css pt-32 md:flex-row items-center lg:w-4/5 flex-col-reverse">
+    <div
+      class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center"
+    >
+      <h1 class="text-gray-900 text-3xl title-font font-medium mb-2" style="font-family: 'Righteous', sans-serif">
+        Hi, This is Sakhawat Hossain
+      </h1>
+      <h2 class="text-sm title-font text-gray-500 tracking-widest mb-2">Software Engineer</h2>
+
+      <p class="leading-relaxed mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque et reiciendis voluptas quasi aliquid fuga vitae
+        nesciunt inventore ipsam architecto.
+      </p>
+
+      <div class="flex justify-center">
+        <button
+          class="inline-flex text-white bg-slate-900 border-0 py-2 px-6 focus:outline-none hover:bg-slate-700 rounded text-lg"
+        >
+          Hire Me
+        </button>
+        <button
+          class="ml-4 inline-flex text-white bg-slate-900 border-0 py-2 px-6 focus:outline-none hover:bg-slate-700 rounded text-lg"
+        >
+          Let's Talk
+        </button>
+      </div>
+      <div class="flex mt-10">
+        <a class="text-gray-500" href="#" target="_blank">
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="#" target="_blank">
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+            ></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="#" target="_blank">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="#" target="_blank">
+          <svg
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+            ></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-80 md:w-1/2 w-5/6 mb-6 lg:mb-0 md:mb-0">
+      <img class="object-cover object-center rounded" alt="no-image" src="{% static 'images/profile/profile4.png' %}" />
+    </div>
+  </div>
+</section>
+
+{%endblock %} {% block footer %}
+<!-- <p>&copy; 2024 My Django Site. All rights reserved.</p> -->
+{% endblock footer %}

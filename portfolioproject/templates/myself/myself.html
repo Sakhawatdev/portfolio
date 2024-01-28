@@ -1,0 +1,33 @@
+{% extends "common_code/base.html" %}
+{% block title %} My Self {% endblock title%}
+{% block content %}
+{% load static %}
+
+<section class="text-gray-600 body-font bg-slate-100">
+  <div class="container mx-auto flex px-5 pt-24 md:flex-row flex-col items-center">
+    <div
+      class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About My Self
+      </h1>
+      <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita hic similique
+        ut minus ad, maxime recusandae aspernatur magnam odio excepturi voluptatibus ipsum et explicabo quae, labore
+        quis iure reiciendis soluta incidunt repellat ipsam nihil totam! Alias, soluta rerum. Sit, optio harum suscipit
+        expedita nihil inventore excepturi, ducimus laborum, doloremque vitae reiciendis quam veritatis ut iste
+        exercitationem provident repudiandae maxime fugiat! Voluptatibus, exercitationem officia hic fugit dolores
+        suscipit minima numquam dolorum amet? Nisi aut unde deserunt a molestias eveniet perspiciatis! Ab.</p>
+      <div class="flex w-full md:justify-start justify-center items-end">
+        <button
+          class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Learn
+          More</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src=" {% static 'images/profile/myself1.jpg' %} ">
+    </div>
+  </div>
+</section>
+
+
+
+
+{% endblock content%}
