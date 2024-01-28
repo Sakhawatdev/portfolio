@@ -23,4 +23,7 @@ urlpatterns = [
     path('', include('apps.Home.urls')),
     path('contact/', include('apps.Contact.urls')),
     path('myself/', include('apps.Myself.urls')),
+    path('education/', include('apps.Education.urls')),
+    path('my_projects/', include('apps.MyProjects.urls')),
+    path('my_skill/', include('apps.MySkill.urls')),
 ]
